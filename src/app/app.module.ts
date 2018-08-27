@@ -42,7 +42,6 @@ import {
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
-
 import { RouterModule, Routes } from '@angular/router';
 import { FirstPageComponent } from './first-page/first-page.component';
 import { SecondPageComponent } from './second-page/second-page.component';
