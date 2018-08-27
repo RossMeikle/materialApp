@@ -42,13 +42,15 @@ import {
   MatTooltipModule,
   MatTreeModule,
 } from '@angular/material';
-import { MyDashboardComponent } from './my-dashboard/my-dashboard.component';
-import { NameComponent } from './name/name.component';
+
 import { RouterModule, Routes } from '@angular/router';
 import { FirstPageComponent } from './first-page/first-page.component';
 import { SecondPageComponent } from './second-page/second-page.component';
 import { ThirdPageComponent } from './third-page/third-page.component';
-import { DataTableComponent } from './data-table/data-table.component';
+import { MyDashboardComponent } from './third-page/my-dashboard/my-dashboard.component';
+import { DataTableComponent } from './second-page/data-table/data-table.component';
+import { ChartsModule } from 'ng2-charts';
+
 
 const appRoutes: Routes = [
   { path: 'first-page', component: FirstPageComponent },
@@ -62,7 +64,6 @@ const appRoutes: Routes = [
     AppComponent,
     MyNavComponent,
     MyDashboardComponent,
-    NameComponent,
     FirstPageComponent,
     SecondPageComponent,
     ThirdPageComponent,
@@ -107,7 +108,8 @@ const appRoutes: Routes = [
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
