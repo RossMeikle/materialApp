@@ -49,6 +49,7 @@ import { ThirdPageComponent } from './third-page/third-page.component';
 import { MyDashboardComponent } from './third-page/my-dashboard/my-dashboard.component';
 import { DataTableComponent } from './second-page/data-table/data-table.component';
 import { ChartsModule } from 'ng2-charts';
+import { CreatesocketComponent } from './first-page/createsocket/createsocket.component';
 
 
 const appRoutes: Routes = [
@@ -66,7 +67,8 @@ const appRoutes: Routes = [
     FirstPageComponent,
     SecondPageComponent,
     ThirdPageComponent,
-    DataTableComponent
+    DataTableComponent,
+    CreatesocketComponent
   ],
   imports: [
     BrowserModule,
