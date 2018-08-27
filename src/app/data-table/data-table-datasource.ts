@@ -9,7 +9,7 @@ export interface DataTableItem {
   id: number;
 }
 
-// TODO: replace this with real data from your application
+// TODO: replace this with real data from your applications
 const EXAMPLE_DATA: DataTableItem[] = [
   {id: 1, name: 'Hydrogen'},
   {id: 2, name: 'Helium'},
