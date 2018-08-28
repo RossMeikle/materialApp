@@ -50,6 +50,8 @@ import { MyDashboardComponent } from './third-page/my-dashboard/my-dashboard.com
 import { DataTableComponent } from './second-page/data-table/data-table.component';
 import { ChartsModule } from 'ng2-charts';
 import { CreatesocketComponent } from './first-page/createsocket/createsocket.component';
+import { CreateprojectComponent } from './first-page/createproject/createproject.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 const appRoutes: Routes = [
@@ -68,10 +70,12 @@ const appRoutes: Routes = [
     SecondPageComponent,
     ThirdPageComponent,
     DataTableComponent,
-    CreatesocketComponent
+    CreatesocketComponent,
+    CreateprojectComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     LayoutModule,
     MatAutocompleteModule,

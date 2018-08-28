@@ -1,0 +1,38 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <h3 style="width: 100%; display: inherit">
+        <i class="material-icons">
+            folder
+          </i>Create Project
+        </h3>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="example-container">
+            <mat-form-field>
+              <input matInput placeholder="Project Name">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <input type="text" placeholder="Project type" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+                <mat-autocomplete #auto="matAutocomplete">
+                  <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                    {{option}}
+                  </mat-option>
+                </mat-autocomplete>
+              </mat-form-field>
+
+            <mat-form-field>
+              <textarea matInput placeholder="Description"></textarea>
+            </mat-form-field>
+          
+              <mat-form-field>
+                <input matInput [matDatepicker]="picker" placeholder="Target completion date">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            <br/>
+              <button mat-raised-button color="primary">Create Project</button>
+          </div>
+    </mat-card-content>
+  </mat-card>
+
